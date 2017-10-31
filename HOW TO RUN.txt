@@ -1,0 +1,31 @@
+#########This is running the application on windows:
+
+
+Example 1:
+Use Intellij or Eclipse to build and run the project. This way you get colors when playing, since i have not implemented any another way then through unicode.
+
+
+Example 2:
+
+1. Run compile.bat
+2. Go into bin folder
+3. Execute as mentioned above for Client and Server
+4. Run Tests through unittest.bat
+
+Example 3:
+
+1. Go inside the directory called vikfll-0
+2. Execute "dir /s /B *.java > sources.txt" without the "".
+3. Execute "javac @sources.txt" without the ""
+4. Step into the src folder
+5. To run client: execute "java Client.Client BOT/USER" ( you decide if it should be a bot or user )
+6. To run Server: execute "java Server.Server INT" ( Where INT is a integer for the number of clients to use )
+7. I do not know how to run tests in this way.
+
+
+Example 4:
+1. Go to folder "vikfll-0"
+2. Execute "mkdir bin"
+3. Execute javac.exe -d bin -cp src src/Client/Client.java src/Server/Server.java
+4. Step into src folder
+5. Run as stated in Example 3, steps 5 & 6.

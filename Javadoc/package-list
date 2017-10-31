@@ -1,0 +1,9 @@
+Client
+Game
+Game.Core
+Game.Items
+Game.Items.Cards
+Game.Player
+Network
+Server
+Tests

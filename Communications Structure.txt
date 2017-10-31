@@ -1,0 +1,52 @@
+### Communication structure between server and client ###
+
+"DRAW=typename;value;color"
+-> Draw card of class typename, with the specified value and color.
+
+
+"PLAY=CARD:typename;value;color"
+-> Play one card.
+
+
+"PLAY=CARD:typename;value;colorCARD:typename;value;color"
+-> Play two cards
+
+
+"PLAY=CARD:typename;value;color;UNO"
+-> Play one card, say uno
+
+
+"UPDATE=CARD:typename;value;color"
+-> Card has been played
+
+
+"ACCEPTED"
+-> Play was accepted
+
+
+"DECLINED"
+-> Play was declined
+
+
+"YOURTURN"
+-> Your turn to play
+
+
+"UNOACCEPT"
+-> Uno call was accepted
+
+
+"UNODECLINE"
+-> Uno call was declined
+
+
+"GAMEEND=id"
+-> Game ended and player with id won.
+
+
+"UNOCALLED=id"
+-> Player with id said and is uno.
+
+
+"RULES=text"
+-> Rule was broken, this is the information about the rule.
